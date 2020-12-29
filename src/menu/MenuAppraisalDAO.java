@@ -4,7 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
+
+import setting.Setting;
 
 public class MenuAppraisalDAO {
 
@@ -16,11 +17,8 @@ public class MenuAppraisalDAO {
 
 		try {
 			
-			String dbURL="jdbc:mysql://localhost:3306/menu";
-			String dbID="root";
-			String dbPassword="root";
 			Class.forName("com.mysql.jdbc.Driver");
-			conn= DriverManager.getConnection(dbURL, dbID, dbPassword);
+			conn= DriverManager.getConnection(Setting.getDbURL(), Setting.getDbID(), Setting.getDbPassword());
 			
 		} catch(Exception e) {
 			e.printStackTrace();

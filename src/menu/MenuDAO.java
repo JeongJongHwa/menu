@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+import setting.Setting;
+
 public class MenuDAO {
 
 	private Connection conn;
@@ -14,13 +16,10 @@ public class MenuDAO {
 	
 	public MenuDAO() {
 
-		try {
+try {
 			
-			String dbURL="jdbc:mysql://localhost:3306/menu";
-			String dbID="root";
-			String dbPassword="root";
 			Class.forName("com.mysql.jdbc.Driver");
-			conn= DriverManager.getConnection(dbURL, dbID, dbPassword);
+			conn= DriverManager.getConnection(Setting.getDbURL(), Setting.getDbID(), Setting.getDbPassword());
 			
 		} catch(Exception e) {
 			e.printStackTrace();
