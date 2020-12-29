@@ -1,3 +1,4 @@
+<%@page import="setting.Setting"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="notice.NoticeDAO"%>
@@ -26,7 +27,7 @@
 			script.println("</script>");
 		} else {
 		
-			if( ! "ekfqlccodls".equals(userID) ){
+			if( ! Setting.getNoticeID().equals(userID) ){
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
 				script.println("alert('관리자만이 삭제가 가능합니다.')");

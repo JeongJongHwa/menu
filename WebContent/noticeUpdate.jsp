@@ -1,3 +1,4 @@
+<%@page import="setting.Setting"%>
 <%@page import="notice.NoticeDAO"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="notice.Notice" %>
@@ -58,7 +59,7 @@
 	
 	<%
 	
-		if( ! "ekfqlccodls".equals(userID) ){
+		if( ! Setting.getNoticeID().equals(userID) ){
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
 			script.println("alert('관리자만이 수정이 가능합니다.')");

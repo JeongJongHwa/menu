@@ -1,3 +1,4 @@
+<%@page import="setting.Setting"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="notice.Notice"%>
 <%@page import="java.util.ArrayList"%>
@@ -128,7 +129,7 @@
 			%>
 			
 		<%
-		if ("ekfqlccodls".equals(userID)) {
+		if (Setting.getNoticeID().equals(userID)) {
 		%>
 			<a href="noticeWrite.jsp" class="btn btn-primary pull-right">글쓰기</a>
 		<%

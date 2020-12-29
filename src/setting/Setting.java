@@ -5,6 +5,7 @@ public class Setting {
 	private static String dbURL = "jdbc:mysql://localhost:3306/menu";
 	private static String dbID = "root";
 	private static String dbPassword = "root";
+	private static String noticeID = "ekfqlccodls"; // 관리자 ID
 
 	public static String getDbURL() {
 		return dbURL;
@@ -28,6 +29,14 @@ public class Setting {
 
 	public static void setDbPassword(String dbPassword) {
 		Setting.dbPassword = dbPassword;
+	}
+
+	public static String getNoticeID() {
+		return noticeID;
+	}
+
+	public static void setNoticeID(String noticeID) {
+		Setting.noticeID = noticeID;
 	}
 
 }

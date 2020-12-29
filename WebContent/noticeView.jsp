@@ -1,3 +1,4 @@
+<%@page import="setting.Setting"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="notice.NoticeDAO"%>
 <%@page import="notice.Notice"%>
@@ -100,7 +101,7 @@
 		<div class="col-sm-1"></div>
 			<a class="btn btn-primary pull-left" href="notice.jsp">뒤로가기</a>
 			<%
-				if( "ekfqlccodls".equals( userID ) ) {
+				if( Setting.getNoticeID().equals( userID ) ) {
 			%>
 			<a class="btn btn-primary pull-left" href="noticeUpdate.jsp?noticeNumber=<%= notice.getNoticeNumber() %>">수정하기</a>
 			<a class="btn btn-primary pull-left" href="noticeDeleteAction.jsp?noticeNumber=<%= notice.getNoticeNumber() %>">삭제하기</a>
