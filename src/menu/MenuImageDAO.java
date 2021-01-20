@@ -7,8 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import org.eclipse.jdt.internal.compiler.batch.FileFinder;
-
 import setting.Setting;
 
 public class MenuImageDAO {

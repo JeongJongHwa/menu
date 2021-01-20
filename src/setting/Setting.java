@@ -2,7 +2,7 @@ package setting;
 
 public class Setting {
 
-	private static String dbURL = "jdbc:mysql://localhost:3306/menu";
+	private static String dbURL = "jdbc:mysql://localhost:3306/menu?serverTimezone=UTC";
 	private static String dbID = "root";
 	private static String dbPassword = "root";
 	private static String noticeID = "ekfqlccodls"; // 관리자 ID

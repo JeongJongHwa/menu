@@ -30,6 +30,7 @@
 				<li class="active" ><a class="navbar-brand" href="index.jsp">육식메인화면</a></li>
 				<li><a href="menuList.jsp">식단</a></li>
 				<li><a href="notice.jsp">공지사항</a></li>
+				<li ><a href="custom.jsp">식단 거래처 관리</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="login.jsp">로그인</a></li>
@@ -46,6 +47,7 @@
 				<li class="active" ><a class="navbar-brand" href="index.jsp">육식메인화면</a></li>
 				<li><a href="menuList.jsp">식단</a></li>
 				<li><a href="notice.jsp">공지사항</a></li>
+				<li ><a href="custom.jsp">식단 거래처 관리</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a ><%=userID %> 님 환영합니다</a></li>
@@ -94,10 +96,8 @@
 			
 			
 		</div>
-	
 	</div>
-
-
+	
 
 </body>
 </html>
