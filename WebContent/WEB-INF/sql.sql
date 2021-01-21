@@ -95,12 +95,12 @@ INSERT INTO CUSTOM VALUES( '12345' , '맛동산' , '흥국' , 'ㅎㄱ사장' ,
 0,0,'KOR','대한민국',1,0,
 '2021-01-16 10:41:11','2021-01-16 10:41:11','ㅎㄱ사장','2021-01-16 10:41:11','ㅎㄱ부장','2021-01-16 10:41:11' );
 
-CREATE TABLE ACCOUNT(
-	BUSI_NUM CHAR(20) PRIMARY KEY,  -- 사업자번호
-	FACTORY CHAR(20),          		-- 사무소
-	TRADE_BANK CHAR(20),          	-- 거래은행
-	ACCOUNT_NUM CHAR(20)			-- 계좌번호
-);
+	CREATE TABLE ACCOUNT(
+		BUSI_NUM CHAR(20) PRIMARY KEY,  -- 사업자번호
+		FACTORY CHAR(20),          		-- 사무소
+		TRADE_BANK CHAR(20),          	-- 거래은행
+		ACCOUNT_NUM CHAR(20)			-- 계좌번호
+	);
 
 INSERT INTO ACCOUNT VALUES( '111-11-11111','강서구어딘가','신한은행' ,'22-334-5345345');
 INSERT INTO ACCOUNT VALUES( '123-22-2345','서구어딘가','국민은행' ,'11-222-33333');

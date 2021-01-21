@@ -71,7 +71,7 @@
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
 			script.println("alert('사업자번호와 거래처명은 필수작성입니다.')");
-			script.println("location.href='index.jsp'");
+			script.println("location.href='custom.jsp'");
 			script.println("</script>");
 		} else {
 
